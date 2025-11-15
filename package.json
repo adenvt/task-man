@@ -1,0 +1,5 @@
+{
+  "name": "taskman-monorepo",
+  "private": true,
+  "workspaces": ["projects/*"]
+}
