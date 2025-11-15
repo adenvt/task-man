@@ -1,5 +1,9 @@
 {
   "name": "taskman-monorepo",
   "private": true,
-  "workspaces": ["projects/*"]
+  "workspaces": ["projects/*"],
+  "scripts": {
+    "dev": "bun --bun --filter \"./projects/*\" dev",
+    "db:prepare": "bun --bun --filter \"./projects/backend\" db:prepare"
+  }
 }
